@@ -9,7 +9,29 @@
 <body>
 
   <h1>Wedding RSVP</h1>
-  <p>If you can see this, your setup works 🎉</p>
+  <p>Mooi woorde hiers</p>
+
+  <!--RSVP form-->
+  <form name="rsvp" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="rsvp">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="attending">Will you be attending?</label>
+    <select id="attending" name="attending" required>
+      <option value="">Select an option</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <button type="submit">Submit RSVP</button>
+
+
+</form>
+
 
   <script src="script.js"></script>
 </body>
